@@ -18,6 +18,7 @@ class LibraryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Collection"
 
         setup()
     }
@@ -25,7 +26,7 @@ class LibraryViewController: UIViewController {
     // MARK: - Private
 
     private func setup() {
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         
         viewModel.fetchCollection { _,_  in
             print("done")

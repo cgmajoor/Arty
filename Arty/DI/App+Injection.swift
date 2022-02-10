@@ -13,7 +13,9 @@ import Moya
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
         defaultScope = .graph
-
+        
+        register { WelcomeRouter() as WelcomeRouting }
+        
         register { CollectionRepository(provider: MoyaProvider<CollectionApi>()) }
         // If you don't have an APIKEY for Rijksmuseum you can replace the above line with the one below
         // to use the provider below which will return sample local data

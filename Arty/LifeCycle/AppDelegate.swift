@@ -23,8 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setupMainViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = LibraryViewController()
+        let viewController = WelcomeViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.tintColor = .black
+        navigationController.navigationBar.backgroundColor = .white
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
