@@ -15,6 +15,9 @@ extension Resolver: ResolverRegistering {
         defaultScope = .graph
 
         register { CollectionRepository(provider: MoyaProvider<CollectionApi>()) }
+        // If you don't have an APIKEY for Rijksmuseum you can replace the above line with the one below
+        // to use the provider below which will return sample local data
+        // register { CollectionRepository(provider: MoyaProvider<CollectionApi>(stubClosure: MoyaProvider.immediatelyStub)) }
         
         register { LibraryViewModel(collectionRepository: $0.resolve()) }
     }
