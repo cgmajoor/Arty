@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func setupMainViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = WelcomeViewController()
+        let viewController = LibraryViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

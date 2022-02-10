@@ -12,6 +12,8 @@
 		94E0707A3BB41C64BCD2395C /* Pods_Arty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1AFD1BE291338BC4277A56 /* Pods_Arty.framework */; };
 		CBFA227F4E2F39E2C4168888 /* Pods_ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDDA5B54EAFC83BED670EB0 /* Pods_ArtyData.framework */; };
 		E75A7E422627FBCEDC28DE94 /* Pods_ArtyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB0F4D6EE4863132FC0159 /* Pods_ArtyTests.framework */; };
+		F285478D27B534A500206661 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285478C27B534A500206661 /* LibraryViewController.swift */; };
+		F285478F27B539BE00206661 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285478E27B539BE00206661 /* LibraryViewModel.swift */; };
 		F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */; };
 		F2E0E5C427B2EDC900D9ABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */; };
 		F2E0E5C727B2EDC900D9ABB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C527B2EDC900D9ABB6 /* LaunchScreen.storyboard */; };
@@ -94,6 +96,8 @@
 		A084A15D433684A525B76AD6 /* Pods_Arty_ArtyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arty_ArtyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8BEC9EF15619003ABB6568 /* Pods_ArtyData_ArtyDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtyData_ArtyDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6E2B7ADEAA1769BC7ECB95 /* Pods-ArtyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyData.release.xcconfig"; path = "Target Support Files/Pods-ArtyData/Pods-ArtyData.release.xcconfig"; sourceTree = "<group>"; };
+		F285478C27B534A500206661 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		F285478E27B539BE00206661 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		F2E0E5B727B2EDC800D9ABB6 /* Arty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,8 +189,24 @@
 				5B5563949CE76CDC82AF9290 /* Pods-ArtyTests.debug.xcconfig */,
 				0D50ECBB8A78FECD486815D9 /* Pods-ArtyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F22AABB627B321F5009687BE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F22AABB827B3222C009687BE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F285478C27B534A500206661 /* LibraryViewController.swift */,
+				F285478E27B539BE00206661 /* LibraryViewModel.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		F2E0E5AE27B2EDC800D9ABB6 = {
@@ -247,7 +267,8 @@
 		F2E0E5EA27B304D100D9ABB6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */,
+				F22AABB627B321F5009687BE /* Welcome */,
+				F22AABB827B3222C009687BE /* Library */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -653,6 +674,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */,
+				F285478D27B534A500206661 /* LibraryViewController.swift in Sources */,
+				F285478F27B539BE00206661 /* LibraryViewModel.swift in Sources */,
 				F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
