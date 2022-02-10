@@ -9,7 +9,7 @@ import UIKit
 import Resolver
 
 class LibraryViewController: UIViewController {
-    
+
     // MARK: - Dependencies
 
     @Injected private var viewModel: LibraryViewModel
@@ -28,7 +28,7 @@ class LibraryViewController: UIViewController {
     private func setup() {
         view.backgroundColor = .black
         
-        viewModel.fetchCollection { _,_  in
+        viewModel.fetchCollection { _, _  in
             print("done")
         }
     }

@@ -11,7 +11,6 @@ import Moya
 
 class CollectionRepositoryTests: XCTestCase {
 
-
     func testGetCollectionWithLocalDataSuccesful() throws {
         let stubbingProvider = MoyaProvider<CollectionApi>(stubClosure: MoyaProvider.immediatelyStub)
         let collectionRepository = CollectionRepository(provider: stubbingProvider)

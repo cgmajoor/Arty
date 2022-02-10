@@ -47,7 +47,9 @@ extension CollectionApi: TargetType {
         switch self {
         case .getCollection:
             
-            return Bundle(for: CollectionRepository.self).getData(type: GetCollectionResponse.self, file: "get-collection", withExtension: "json") ?? Data()
+            return Bundle(for: CollectionRepository.self).getData(type: GetCollectionResponse.self,
+                                                                  file: "get-collection",
+                                                                  withExtension: "json") ?? Data()
         }
     }
 

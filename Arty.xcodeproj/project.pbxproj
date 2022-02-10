@@ -415,6 +415,7 @@
 			buildConfigurationList = F2E0E5E127B2EDC900D9ABB6 /* Build configuration list for PBXNativeTarget "Arty" */;
 			buildPhases = (
 				AB6F026D2D01BB727D2E69EA /* [CP] Check Pods Manifest.lock */,
+				F289ABAB27B5C02F00CE7658 /* ShellScript */,
 				F2E0E5B327B2EDC800D9ABB6 /* Sources */,
 				F2E0E5B427B2EDC800D9ABB6 /* Frameworks */,
 				F2E0E5B527B2EDC800D9ABB6 /* Resources */,
@@ -764,6 +765,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtyData-ArtyDataTests/Pods-ArtyData-ArtyDataTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F289ABAB27B5C02F00CE7658 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

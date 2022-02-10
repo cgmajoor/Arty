@@ -12,7 +12,7 @@ import ArtyData
 class LibraryViewModel {
     
     // MARK: - Dependencies
-    
+
     @Injected private var collectionRepository: CollectionRepository
     
     // MARK: - Init
