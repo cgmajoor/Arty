@@ -11,7 +11,7 @@ public class CollectionRepository {
     
     let provider: MoyaProvider<CollectionApi>
     
-    public required init(provider: MoyaProvider<CollectionApi>) {
+    public init(provider: MoyaProvider<CollectionApi>) {
         self.provider = provider
     }
 

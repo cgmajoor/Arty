@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import Resolver
 
 class LibraryViewController: UIViewController {
+    
+    // MARK: - Dependencies
+
+    @Injected private var viewModel: LibraryViewModel
+    
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +22,13 @@ class LibraryViewController: UIViewController {
         setup()
     }
     
+    // MARK: - Private
+
     private func setup() {
         view.backgroundColor = .red
+        
+        viewModel.fetchCollection { _,_  in
+            print("done")
+        }
     }
 }
