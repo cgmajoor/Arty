@@ -13,7 +13,19 @@
 		CBFA227F4E2F39E2C4168888 /* Pods_ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDDA5B54EAFC83BED670EB0 /* Pods_ArtyData.framework */; };
 		E75A7E422627FBCEDC28DE94 /* Pods_ArtyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB0F4D6EE4863132FC0159 /* Pods_ArtyTests.framework */; };
 		F285478D27B534A500206661 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285478C27B534A500206661 /* LibraryViewController.swift */; };
-		F285478F27B539BE00206661 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285478E27B539BE00206661 /* LibraryViewModel.swift */; };
+		F285479227B53C3800206661 /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479127B53C3800206661 /* App+Injection.swift */; };
+		F285479927B5401100206661 /* GetCollectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479827B5401100206661 /* GetCollectionResponse.swift */; };
+		F285479B27B5406F00206661 /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479A27B5406F00206661 /* ArtObject.swift */; };
+		F285479D27B54F5D00206661 /* ArtImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479C27B54F5D00206661 /* ArtImage.swift */; };
+		F285479F27B54F7C00206661 /* CountFacets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479E27B54F7C00206661 /* CountFacets.swift */; };
+		F28547A127B54F9000206661 /* CategoryFacet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A027B54F9000206661 /* CategoryFacet.swift */; };
+		F28547A327B54F9E00206661 /* Facet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A227B54F9E00206661 /* Facet.swift */; };
+		F28547A627B5566A00206661 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A527B5566A00206661 /* CollectionRepository.swift */; };
+		F28547A827B55D0600206661 /* CollectionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A727B55D0600206661 /* CollectionApi.swift */; };
+		F289AB9D27B574F500CE7658 /* get-collection.json in Resources */ = {isa = PBXBuildFile; fileRef = F289AB9C27B574F500CE7658 /* get-collection.json */; };
+		F289AB9F27B5753D00CE7658 /* CollectionRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */; };
+		F289ABA127B576AC00CE7658 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA027B576AC00CE7658 /* Links.swift */; };
+		F289ABA527B5857E00CE7658 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA427B5857E00CE7658 /* Bundle+Decodable.swift */; };
 		F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */; };
 		F2E0E5C427B2EDC900D9ABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */; };
 		F2E0E5C727B2EDC900D9ABB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C527B2EDC900D9ABB6 /* LaunchScreen.storyboard */; };
@@ -97,7 +109,19 @@
 		BB8BEC9EF15619003ABB6568 /* Pods_ArtyData_ArtyDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtyData_ArtyDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6E2B7ADEAA1769BC7ECB95 /* Pods-ArtyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyData.release.xcconfig"; path = "Target Support Files/Pods-ArtyData/Pods-ArtyData.release.xcconfig"; sourceTree = "<group>"; };
 		F285478C27B534A500206661 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
-		F285478E27B539BE00206661 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		F285479127B53C3800206661 /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		F285479827B5401100206661 /* GetCollectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCollectionResponse.swift; sourceTree = "<group>"; };
+		F285479A27B5406F00206661 /* ArtObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObject.swift; sourceTree = "<group>"; };
+		F285479C27B54F5D00206661 /* ArtImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtImage.swift; sourceTree = "<group>"; };
+		F285479E27B54F7C00206661 /* CountFacets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFacets.swift; sourceTree = "<group>"; };
+		F28547A027B54F9000206661 /* CategoryFacet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFacet.swift; sourceTree = "<group>"; };
+		F28547A227B54F9E00206661 /* Facet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facet.swift; sourceTree = "<group>"; };
+		F28547A527B5566A00206661 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
+		F28547A727B55D0600206661 /* CollectionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionApi.swift; sourceTree = "<group>"; };
+		F289AB9C27B574F500CE7658 /* get-collection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-collection.json"; sourceTree = "<group>"; };
+		F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepositoryTests.swift; sourceTree = "<group>"; };
+		F289ABA027B576AC00CE7658 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		F289ABA427B5857E00CE7658 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
 		F2E0E5B727B2EDC800D9ABB6 /* Arty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,9 +228,72 @@
 			isa = PBXGroup;
 			children = (
 				F285478C27B534A500206661 /* LibraryViewController.swift */,
-				F285478E27B539BE00206661 /* LibraryViewModel.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		F285479027B53C2C00206661 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F285479127B53C3800206661 /* App+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F285479327B53CC000206661 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F285479427B53CC600206661 /* Collection */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F285479427B53CC600206661 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				F285479727B5400000206661 /* Models */,
+				F28547A527B5566A00206661 /* CollectionRepository.swift */,
+				F28547A727B55D0600206661 /* CollectionApi.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F285479727B5400000206661 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F285479827B5401100206661 /* GetCollectionResponse.swift */,
+				F285479A27B5406F00206661 /* ArtObject.swift */,
+				F285479C27B54F5D00206661 /* ArtImage.swift */,
+				F285479E27B54F7C00206661 /* CountFacets.swift */,
+				F28547A027B54F9000206661 /* CategoryFacet.swift */,
+				F28547A227B54F9E00206661 /* Facet.swift */,
+				F289ABA027B576AC00CE7658 /* Links.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F28547A427B550CF00206661 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F289ABA327B5856E00CE7658 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F289AB9B27B574D200CE7658 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				F289AB9C27B574F500CE7658 /* get-collection.json */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		F289ABA327B5856E00CE7658 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F289ABA427B5857E00CE7658 /* Bundle+Decodable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F2E0E5AE27B2EDC800D9ABB6 = {
@@ -238,6 +325,7 @@
 		F2E0E5B927B2EDC800D9ABB6 /* Arty */ = {
 			isa = PBXGroup;
 			children = (
+				F285479027B53C2C00206661 /* DI */,
 				F2E0E5ED27B304F700D9ABB6 /* LifeCycle */,
 				F2E0E5EA27B304D100D9ABB6 /* Modules */,
 				F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */,
@@ -284,8 +372,11 @@
 		F2E0E5F527B3143C00D9ABB6 /* ArtyData */ = {
 			isa = PBXGroup;
 			children = (
-				F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */,
 				F2E0E5F727B3143C00D9ABB6 /* ArtyData.docc */,
+				F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */,
+				F289AB9B27B574D200CE7658 /* LocalData */,
+				F285479327B53CC000206661 /* Modules */,
+				F28547A427B550CF00206661 /* Utility */,
 			);
 			path = ArtyData;
 			sourceTree = "<group>";
@@ -294,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				F2E0E60427B3143C00D9ABB6 /* ArtyDataTests.swift */,
+				F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */,
 			);
 			path = ArtyDataTests;
 			sourceTree = "<group>";
@@ -492,6 +584,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289AB9D27B574F500CE7658 /* get-collection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,8 +767,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */,
+				F285479227B53C3800206661 /* App+Injection.swift in Sources */,
 				F285478D27B534A500206661 /* LibraryViewController.swift in Sources */,
-				F285478F27B539BE00206661 /* LibraryViewModel.swift in Sources */,
 				F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,7 +794,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28547A127B54F9000206661 /* CategoryFacet.swift in Sources */,
+				F289ABA527B5857E00CE7658 /* Bundle+Decodable.swift in Sources */,
+				F28547A327B54F9E00206661 /* Facet.swift in Sources */,
+				F285479B27B5406F00206661 /* ArtObject.swift in Sources */,
 				F2E0E5F827B3143C00D9ABB6 /* ArtyData.docc in Sources */,
+				F285479D27B54F5D00206661 /* ArtImage.swift in Sources */,
+				F289ABA127B576AC00CE7658 /* Links.swift in Sources */,
+				F28547A827B55D0600206661 /* CollectionApi.swift in Sources */,
+				F285479927B5401100206661 /* GetCollectionResponse.swift in Sources */,
+				F28547A627B5566A00206661 /* CollectionRepository.swift in Sources */,
+				F285479F27B54F7C00206661 /* CountFacets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +813,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2E0E60527B3143C00D9ABB6 /* ArtyDataTests.swift in Sources */,
+				F289AB9F27B5753D00CE7658 /* CollectionRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +979,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4ACC4877B7C22F0A77192C6A /* Pods-Arty.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -902,6 +1007,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86EF8DED15B6E49D3EEC4BAA /* Pods-Arty.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
