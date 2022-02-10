@@ -22,7 +22,7 @@ class LibraryViewModel {
     }
     
     public func fetchCollection(completion: @escaping ((GetCollectionResponse?, Error?) -> Void)) {
-        collectionRepository.getCollection() { result in
+        collectionRepository.getCollection(page: 0, pageSize: 3) { result in
             switch result {
             case .success(let response):
                 print("\(response)")
