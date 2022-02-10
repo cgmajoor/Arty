@@ -34,5 +34,9 @@ Art browser iOS application for Rijksmuseum
 
 ## Future Scenarios & Ideas
 
-## Tools used
-I took .gitignore file from [github/gitignore](https://github.com/github/gitignore/blob/main/Swift.gitignore)
+## Helper Tools
+- .gitignore from [github/gitignore](https://github.com/github/gitignore/blob/main/Swift.gitignore)
+- .swiftlint.yml from [SwiftLint](https://github.com/realm/SwiftLint)
+- To check API [Postman](http://postman.com/)
+- JSON [JsonFormatter](https://jsonformatter.org/json-pretty-print)
+- JSON [QuickType](https://app.quicktype.io)
