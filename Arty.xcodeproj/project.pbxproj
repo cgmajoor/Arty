@@ -37,7 +37,6 @@
 		F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */; };
 		F2E0E5F827B3143C00D9ABB6 /* ArtyData.docc in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5F727B3143C00D9ABB6 /* ArtyData.docc */; };
 		F2E0E5FE27B3143C00D9ABB6 /* ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */; };
-		F2E0E60527B3143C00D9ABB6 /* ArtyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E60427B3143C00D9ABB6 /* ArtyDataTests.swift */; };
 		F2E0E60627B3143C00D9ABB6 /* ArtyData.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2E0E60927B3143C00D9ABB6 /* ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */; };
 		F2E0E60A27B3143C00D9ABB6 /* ArtyData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -141,7 +140,6 @@
 		F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtyData.h; sourceTree = "<group>"; };
 		F2E0E5F727B3143C00D9ABB6 /* ArtyData.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ArtyData.docc; sourceTree = "<group>"; };
 		F2E0E5FD27B3143C00D9ABB6 /* ArtyDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtyDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E0E60427B3143C00D9ABB6 /* ArtyDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtyDataTests.swift; sourceTree = "<group>"; };
 		FCAB0F4D6EE4863132FC0159 /* Pods_ArtyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -390,7 +388,6 @@
 		F2E0E60327B3143C00D9ABB6 /* ArtyDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2E0E60427B3143C00D9ABB6 /* ArtyDataTests.swift */,
 				F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */,
 			);
 			path = ArtyDataTests;
@@ -838,7 +835,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2E0E60527B3143C00D9ABB6 /* ArtyDataTests.swift in Sources */,
 				F289AB9F27B5753D00CE7658 /* CollectionRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
