@@ -8,7 +8,7 @@
 import Moya
 
 public enum ApiEnvironment {
-    static let apiKey = "API_KEY"
+    static let apiKey = "APIKEY"
     static let baseUrl = "https://www.rijksmuseum.nl?key=\(apiKey)"
     static let collectionPath = "/api/en/collection"
 }
