@@ -8,7 +8,7 @@
 import Moya
 
 public enum ApiEnvironment {
-    static let apiKey = "API_KEY"
+    static let apiKey = "APIKEY"
     static let baseUrl = "https://www.rijksmuseum.nl?key=\(apiKey)"
     static let collectionPath = "/api/en/collection"
 }
@@ -38,7 +38,8 @@ extension CollectionApi: TargetType {
         switch self {
         case .getCollection(let page, let pageSize):
             let dict: [String: Any] = ["p": page,
-                                       "ps": pageSize]
+                                       "ps": pageSize,
+                                       "imgonly": "true"]
             return .requestParameters(parameters: dict, encoding: URLEncoding.default)
         }
     }

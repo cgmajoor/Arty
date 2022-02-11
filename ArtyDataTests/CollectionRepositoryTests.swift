@@ -44,4 +44,5 @@ class CollectionRepositoryTests: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
+
 }
