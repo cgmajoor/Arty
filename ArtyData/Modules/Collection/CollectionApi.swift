@@ -38,7 +38,8 @@ extension CollectionApi: TargetType {
         switch self {
         case .getCollection(let page, let pageSize):
             let dict: [String: Any] = ["p": page,
-                                       "ps": pageSize]
+                                       "ps": pageSize,
+                                       "imgonly": "true"]
             return .requestParameters(parameters: dict, encoding: URLEncoding.default)
         }
     }

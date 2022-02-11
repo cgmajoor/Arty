@@ -17,15 +17,13 @@ class LibraryViewController: UIViewController {
     // MARK: - UI
 
     private var activityIndicatorView = UIActivityIndicatorView(style: .large)
-    private lazy var fetchNextPage: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = UIColor.white
-        button.layer.cornerRadius = 5
-        button.setTitle("Fetch Next Page", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(onTapFetchNextPage), for: .touchUpInside)
-        return button
+
+    private lazy var collectionView: UICollectionView = {
+        let collectionView  = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        collectionView.backgroundColor = .blue
+        return collectionView
     }()
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -41,8 +39,9 @@ class LibraryViewController: UIViewController {
 
     private func setup() {
         view.backgroundColor = .black
+        view.embedToSafeArea(view: collectionView)
 
-        [activityIndicatorView, fetchNextPage].forEach {
+        [activityIndicatorView].forEach {
             view.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -51,12 +50,10 @@ class LibraryViewController: UIViewController {
     }
 
     private func setupLayoutConstraints() {
-        activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        fetchNextPage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        fetchNextPage.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        fetchNextPage.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        fetchNextPage.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        NSLayoutConstraint.activate([
+            activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
 
     private func getCollection() {

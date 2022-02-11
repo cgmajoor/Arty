@@ -22,6 +22,7 @@
 		F28547A327B54F9E00206661 /* Facet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A227B54F9E00206661 /* Facet.swift */; };
 		F28547A627B5566A00206661 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A527B5566A00206661 /* CollectionRepository.swift */; };
 		F28547A827B55D0600206661 /* CollectionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A727B55D0600206661 /* CollectionApi.swift */; };
+		F2856E6F27B66F6800B60607 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2856E6E27B66F6800B60607 /* UIViewExtensions.swift */; };
 		F289AB9D27B574F500CE7658 /* get-collection.json in Resources */ = {isa = PBXBuildFile; fileRef = F289AB9C27B574F500CE7658 /* get-collection.json */; };
 		F289AB9F27B5753D00CE7658 /* CollectionRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */; };
 		F289ABA127B576AC00CE7658 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA027B576AC00CE7658 /* Links.swift */; };
@@ -123,6 +124,7 @@
 		F28547A227B54F9E00206661 /* Facet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facet.swift; sourceTree = "<group>"; };
 		F28547A527B5566A00206661 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
 		F28547A727B55D0600206661 /* CollectionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionApi.swift; sourceTree = "<group>"; };
+		F2856E6E27B66F6800B60607 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		F289AB9C27B574F500CE7658 /* get-collection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-collection.json"; sourceTree = "<group>"; };
 		F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepositoryTests.swift; sourceTree = "<group>"; };
 		F289ABA027B576AC00CE7658 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
@@ -294,6 +296,14 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		F2856E6D27B66F3B00B60607 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2856E6E27B66F6800B60607 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F289AB9B27B574D200CE7658 /* LocalData */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +323,7 @@
 		F289ABB227B5E82900CE7658 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F2856E6D27B66F3B00B60607 /* Extensions */,
 				F289ABB327B5E86400CE7658 /* ResponseState.swift */,
 			);
 			path = Utility;
@@ -829,6 +840,7 @@
 				F285479227B53C3800206661 /* App+Injection.swift in Sources */,
 				F289ABAF27B5E1E500CE7658 /* Artwork.swift in Sources */,
 				F285478D27B534A500206661 /* LibraryViewController.swift in Sources */,
+				F2856E6F27B66F6800B60607 /* UIViewExtensions.swift in Sources */,
 				F289ABA927B5A7AC00CE7658 /* WelcomeRouter.swift in Sources */,
 				F289ABA727B58C8900CE7658 /* LibraryViewModel.swift in Sources */,
 				F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */,
