@@ -8,7 +8,7 @@
 import UIKit
 import Resolver
 
-class LibraryViewController: UIViewController {
+class LibraryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     // MARK: - Dependencies
 
@@ -19,7 +19,8 @@ class LibraryViewController: UIViewController {
     private var activityIndicatorView = UIActivityIndicatorView(style: .large)
 
     private lazy var collectionView: UICollectionView = {
-        let collectionView  = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        let collectionView  = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.backgroundColor = .blue
         return collectionView
     }()
@@ -47,6 +48,8 @@ class LibraryViewController: UIViewController {
         }
 
         setupLayoutConstraints()
+
+        configureCollectionView()
     }
 
     private func setupLayoutConstraints() {
@@ -55,6 +58,17 @@ class LibraryViewController: UIViewController {
             activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
+
+    private func configureCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ArtworkCell.self, forCellWithReuseIdentifier: String(describing: ArtworkCell.self))
+        collectionView.register(LibraryHeaderView.self,
+                                forSupplementaryViewOfKind: String(describing: LibraryViewController.self),
+                                withReuseIdentifier: String(describing: LibraryHeaderView.self))
+    }
+
+    // MARK: - Fetch data
 
     private func getCollection() {
 
@@ -65,12 +79,18 @@ class LibraryViewController: UIViewController {
             case .loading:
                 self.activityIndicatorView.startAnimating()
             case .finished(let outcome):
-                self.activityIndicatorView.stopAnimating()
-                switch outcome {
-                case .success(let getCollectionResponse):
-                    print("Success! Artobjects count \(getCollectionResponse.artObjects.count)")
-                case .failure(let error):
-                    print(error.localizedDescription)
+
+                DispatchQueue.main.async {
+                    self.activityIndicatorView.stopAnimating()
+                    switch outcome {
+                    case .success(let getCollectionResponse):
+                        print("Success! Artobjects count \(getCollectionResponse.artObjects.count)")
+
+                        self.collectionView.reloadData()
+
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                    }
                 }
             }
         }
@@ -81,5 +101,67 @@ class LibraryViewController: UIViewController {
     @objc private func onTapFetchNextPage() {
         getCollection()
         print("Current page: \(viewModel.currentPage)")
+    }
+
+    // MARK: - UICollectionViewLayout
+
+    func createLayout() -> UICollectionViewLayout {
+
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 20
+
+        let layout = UICollectionViewCompositionalLayout(sectionProvider: { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                                  heightDimension: .fractionalWidth(2/3))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90),
+                                                   heightDimension: .fractionalHeight(0.4))
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+            group.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = UICollectionLayoutSectionOrthogonalScrollingBehavior.continuous
+
+            let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .estimated(44))
+            let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                layoutSize: headerSize,
+                elementKind: String(describing: LibraryViewController.self),
+                alignment: .top)
+            section.boundarySupplementaryItems = [sectionHeader]
+            return section
+
+        }, configuration: config)
+        return layout
+    }
+
+    // MARK: - UICollectionViewDataSource
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.artworks.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ArtworkCell.self), for: indexPath) as? ArtworkCell else {
+            return UICollectionViewCell()
+        }
+        let artwork = viewModel.artworks[indexPath.row]
+        cell.configure(artwork: artwork)
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: String(describing: LibraryViewController.self),
+                                                                         withReuseIdentifier: String(describing: LibraryHeaderView.self),
+                                                                         for: indexPath) as? LibraryHeaderView else {
+                  return UICollectionReusableView()
+              }
+        view.configure(title: "All Artworks")
+        return view
     }
 }
