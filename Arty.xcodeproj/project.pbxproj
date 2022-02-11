@@ -7,6 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B75B043EB8D4E6314C2F8EC /* Pods_ArtyData_ArtyDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8BEC9EF15619003ABB6568 /* Pods_ArtyData_ArtyDataTests.framework */; };
+		6862E5AF6E1DEF4157A4BA8A /* Pods_Arty_ArtyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A084A15D433684A525B76AD6 /* Pods_Arty_ArtyUITests.framework */; };
+		94E0707A3BB41C64BCD2395C /* Pods_Arty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1AFD1BE291338BC4277A56 /* Pods_Arty.framework */; };
+		CBFA227F4E2F39E2C4168888 /* Pods_ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDDA5B54EAFC83BED670EB0 /* Pods_ArtyData.framework */; };
+		E75A7E422627FBCEDC28DE94 /* Pods_ArtyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB0F4D6EE4863132FC0159 /* Pods_ArtyTests.framework */; };
+		F285478D27B534A500206661 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285478C27B534A500206661 /* LibraryViewController.swift */; };
+		F285479227B53C3800206661 /* App+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479127B53C3800206661 /* App+Injection.swift */; };
+		F285479927B5401100206661 /* GetCollectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479827B5401100206661 /* GetCollectionResponse.swift */; };
+		F285479B27B5406F00206661 /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479A27B5406F00206661 /* ArtObject.swift */; };
+		F285479D27B54F5D00206661 /* ArtImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479C27B54F5D00206661 /* ArtImage.swift */; };
+		F285479F27B54F7C00206661 /* CountFacets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F285479E27B54F7C00206661 /* CountFacets.swift */; };
+		F28547A127B54F9000206661 /* CategoryFacet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A027B54F9000206661 /* CategoryFacet.swift */; };
+		F28547A327B54F9E00206661 /* Facet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A227B54F9E00206661 /* Facet.swift */; };
+		F28547A627B5566A00206661 /* CollectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A527B5566A00206661 /* CollectionRepository.swift */; };
+		F28547A827B55D0600206661 /* CollectionApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28547A727B55D0600206661 /* CollectionApi.swift */; };
+		F2856E6F27B66F6800B60607 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2856E6E27B66F6800B60607 /* UIViewExtensions.swift */; };
+		F2856E7127B675AA00B60607 /* LibraryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2856E7027B675AA00B60607 /* LibraryHeaderView.swift */; };
+		F2856E7327B67FDF00B60607 /* ArtworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2856E7227B67FDF00B60607 /* ArtworkCell.swift */; };
+		F2856E7727B6813500B60607 /* ArtCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2856E7627B6813500B60607 /* ArtCardView.swift */; };
+		F289AB9D27B574F500CE7658 /* get-collection.json in Resources */ = {isa = PBXBuildFile; fileRef = F289AB9C27B574F500CE7658 /* get-collection.json */; };
+		F289AB9F27B5753D00CE7658 /* CollectionRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */; };
+		F289ABA127B576AC00CE7658 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA027B576AC00CE7658 /* Links.swift */; };
+		F289ABA527B5857E00CE7658 /* Bundle+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA427B5857E00CE7658 /* Bundle+Decodable.swift */; };
+		F289ABA727B58C8900CE7658 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA627B58C8900CE7658 /* LibraryViewModel.swift */; };
+		F289ABA927B5A7AC00CE7658 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABA827B5A7AC00CE7658 /* WelcomeRouter.swift */; };
+		F289ABAF27B5E1E500CE7658 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABAE27B5E1E500CE7658 /* Artwork.swift */; };
+		F289ABB127B5E1F300CE7658 /* ArtCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB027B5E1F300CE7658 /* ArtCategory.swift */; };
+		F289ABB427B5E86400CE7658 /* ResponseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB327B5E86400CE7658 /* ResponseState.swift */; };
+		F289ABB827B5ED3300CE7658 /* LibraryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */; };
 		F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */; };
 		F2E0E5C427B2EDC900D9ABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */; };
 		F2E0E5C727B2EDC900D9ABB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C527B2EDC900D9ABB6 /* LaunchScreen.storyboard */; };
@@ -14,6 +43,11 @@
 		F2E0E5DC27B2EDC900D9ABB6 /* ArtyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5DB27B2EDC900D9ABB6 /* ArtyUITests.swift */; };
 		F2E0E5DE27B2EDC900D9ABB6 /* ArtyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5DD27B2EDC900D9ABB6 /* ArtyUITestsLaunchTests.swift */; };
 		F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */; };
+		F2E0E5F827B3143C00D9ABB6 /* ArtyData.docc in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5F727B3143C00D9ABB6 /* ArtyData.docc */; };
+		F2E0E5FE27B3143C00D9ABB6 /* ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */; };
+		F2E0E60627B3143C00D9ABB6 /* ArtyData.h in Headers */ = {isa = PBXBuildFile; fileRef = F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2E0E60927B3143C00D9ABB6 /* ArtyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */; };
+		F2E0E60A27B3143C00D9ABB6 /* ArtyData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +65,82 @@
 			remoteGlobalIDString = F2E0E5B627B2EDC800D9ABB6;
 			remoteInfo = Arty;
 		};
+		F2E0E5FF27B3143C00D9ABB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2E0E5AF27B2EDC800D9ABB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E0E5F327B3143C00D9ABB6;
+			remoteInfo = ArtyData;
+		};
+		F2E0E60127B3143C00D9ABB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2E0E5AF27B2EDC800D9ABB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E0E5B627B2EDC800D9ABB6;
+			remoteInfo = Arty;
+		};
+		F2E0E60727B3143C00D9ABB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2E0E5AF27B2EDC800D9ABB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2E0E5F327B3143C00D9ABB6;
+			remoteInfo = ArtyData;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F2E0E60E27B3143C00D9ABB6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2E0E60A27B3143C00D9ABB6 /* ArtyData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D50ECBB8A78FECD486815D9 /* Pods-ArtyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyTests.release.xcconfig"; path = "Target Support Files/Pods-ArtyTests/Pods-ArtyTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FE725693024AEBE7C2A70ED /* Pods-ArtyData-ArtyDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyData-ArtyDataTests.debug.xcconfig"; path = "Target Support Files/Pods-ArtyData-ArtyDataTests/Pods-ArtyData-ArtyDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ACC4877B7C22F0A77192C6A /* Pods-Arty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arty.debug.xcconfig"; path = "Target Support Files/Pods-Arty/Pods-Arty.debug.xcconfig"; sourceTree = "<group>"; };
+		4C1AFD1BE291338BC4277A56 /* Pods_Arty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5563949CE76CDC82AF9290 /* Pods-ArtyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyTests.debug.xcconfig"; path = "Target Support Files/Pods-ArtyTests/Pods-ArtyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65A6B6DCB374A93ADB5F36CC /* Pods-Arty-ArtyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arty-ArtyUITests.release.xcconfig"; path = "Target Support Files/Pods-Arty-ArtyUITests/Pods-Arty-ArtyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6BDDA5B54EAFC83BED670EB0 /* Pods_ArtyData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtyData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF4122982930701BE5EAF39 /* Pods-Arty-ArtyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arty-ArtyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Arty-ArtyUITests/Pods-Arty-ArtyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		703212F636DDD0E68CBABE6A /* Pods-ArtyData-ArtyDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyData-ArtyDataTests.release.xcconfig"; path = "Target Support Files/Pods-ArtyData-ArtyDataTests/Pods-ArtyData-ArtyDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		86EF8DED15B6E49D3EEC4BAA /* Pods-Arty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arty.release.xcconfig"; path = "Target Support Files/Pods-Arty/Pods-Arty.release.xcconfig"; sourceTree = "<group>"; };
+		95C60E883FD30BFD8330F635 /* Pods-ArtyData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyData.debug.xcconfig"; path = "Target Support Files/Pods-ArtyData/Pods-ArtyData.debug.xcconfig"; sourceTree = "<group>"; };
+		A084A15D433684A525B76AD6 /* Pods_Arty_ArtyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arty_ArtyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8BEC9EF15619003ABB6568 /* Pods_ArtyData_ArtyDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtyData_ArtyDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6E2B7ADEAA1769BC7ECB95 /* Pods-ArtyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtyData.release.xcconfig"; path = "Target Support Files/Pods-ArtyData/Pods-ArtyData.release.xcconfig"; sourceTree = "<group>"; };
+		F285478C27B534A500206661 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		F285479127B53C3800206661 /* App+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Injection.swift"; sourceTree = "<group>"; };
+		F285479827B5401100206661 /* GetCollectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCollectionResponse.swift; sourceTree = "<group>"; };
+		F285479A27B5406F00206661 /* ArtObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObject.swift; sourceTree = "<group>"; };
+		F285479C27B54F5D00206661 /* ArtImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtImage.swift; sourceTree = "<group>"; };
+		F285479E27B54F7C00206661 /* CountFacets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFacets.swift; sourceTree = "<group>"; };
+		F28547A027B54F9000206661 /* CategoryFacet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFacet.swift; sourceTree = "<group>"; };
+		F28547A227B54F9E00206661 /* Facet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facet.swift; sourceTree = "<group>"; };
+		F28547A527B5566A00206661 /* CollectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepository.swift; sourceTree = "<group>"; };
+		F28547A727B55D0600206661 /* CollectionApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionApi.swift; sourceTree = "<group>"; };
+		F2856E6E27B66F6800B60607 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F2856E7027B675AA00B60607 /* LibraryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryHeaderView.swift; sourceTree = "<group>"; };
+		F2856E7227B67FDF00B60607 /* ArtworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkCell.swift; sourceTree = "<group>"; };
+		F2856E7627B6813500B60607 /* ArtCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCardView.swift; sourceTree = "<group>"; };
+		F289AB9C27B574F500CE7658 /* get-collection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-collection.json"; sourceTree = "<group>"; };
+		F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionRepositoryTests.swift; sourceTree = "<group>"; };
+		F289ABA027B576AC00CE7658 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		F289ABA427B5857E00CE7658 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
+		F289ABA627B58C8900CE7658 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		F289ABA827B5A7AC00CE7658 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		F289ABAE27B5E1E500CE7658 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		F289ABB027B5E1F300CE7658 /* ArtCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCategory.swift; sourceTree = "<group>"; };
+		F289ABB327B5E86400CE7658 /* ResponseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseState.swift; sourceTree = "<group>"; };
+		F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModelTests.swift; sourceTree = "<group>"; };
 		F2E0E5B727B2EDC800D9ABB6 /* Arty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +152,11 @@
 		F2E0E5DB27B2EDC900D9ABB6 /* ArtyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtyUITests.swift; sourceTree = "<group>"; };
 		F2E0E5DD27B2EDC900D9ABB6 /* ArtyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArtyData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtyData.h; sourceTree = "<group>"; };
+		F2E0E5F727B3143C00D9ABB6 /* ArtyData.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ArtyData.docc; sourceTree = "<group>"; };
+		F2E0E5FD27B3143C00D9ABB6 /* ArtyDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtyDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAB0F4D6EE4863132FC0159 /* Pods_ArtyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E0E60927B3143C00D9ABB6 /* ArtyData.framework in Frameworks */,
+				94E0707A3BB41C64BCD2395C /* Pods_Arty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75A7E422627FBCEDC28DE94 /* Pods_ArtyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +181,197 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6862E5AF6E1DEF4157A4BA8A /* Pods_Arty_ArtyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E0E5F127B3143C00D9ABB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFA227F4E2F39E2C4168888 /* Pods_ArtyData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E0E5FA27B3143C00D9ABB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E0E5FE27B3143C00D9ABB6 /* ArtyData.framework in Frameworks */,
+				3B75B043EB8D4E6314C2F8EC /* Pods_ArtyData_ArtyDataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C321A68D18CC81DFF15436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1AFD1BE291338BC4277A56 /* Pods_Arty.framework */,
+				A084A15D433684A525B76AD6 /* Pods_Arty_ArtyUITests.framework */,
+				6BDDA5B54EAFC83BED670EB0 /* Pods_ArtyData.framework */,
+				BB8BEC9EF15619003ABB6568 /* Pods_ArtyData_ArtyDataTests.framework */,
+				FCAB0F4D6EE4863132FC0159 /* Pods_ArtyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72269C3AF88792AE2A741500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ACC4877B7C22F0A77192C6A /* Pods-Arty.debug.xcconfig */,
+				86EF8DED15B6E49D3EEC4BAA /* Pods-Arty.release.xcconfig */,
+				6EF4122982930701BE5EAF39 /* Pods-Arty-ArtyUITests.debug.xcconfig */,
+				65A6B6DCB374A93ADB5F36CC /* Pods-Arty-ArtyUITests.release.xcconfig */,
+				95C60E883FD30BFD8330F635 /* Pods-ArtyData.debug.xcconfig */,
+				DD6E2B7ADEAA1769BC7ECB95 /* Pods-ArtyData.release.xcconfig */,
+				3FE725693024AEBE7C2A70ED /* Pods-ArtyData-ArtyDataTests.debug.xcconfig */,
+				703212F636DDD0E68CBABE6A /* Pods-ArtyData-ArtyDataTests.release.xcconfig */,
+				5B5563949CE76CDC82AF9290 /* Pods-ArtyTests.debug.xcconfig */,
+				0D50ECBB8A78FECD486815D9 /* Pods-ArtyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F22AABB627B321F5009687BE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */,
+				F289ABA827B5A7AC00CE7658 /* WelcomeRouter.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F22AABB827B3222C009687BE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F285478C27B534A500206661 /* LibraryViewController.swift */,
+				F289ABA627B58C8900CE7658 /* LibraryViewModel.swift */,
+				F289ABAE27B5E1E500CE7658 /* Artwork.swift */,
+				F289ABB027B5E1F300CE7658 /* ArtCategory.swift */,
+				F2856E7027B675AA00B60607 /* LibraryHeaderView.swift */,
+				F2856E7227B67FDF00B60607 /* ArtworkCell.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		F285479027B53C2C00206661 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F285479127B53C3800206661 /* App+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F285479327B53CC000206661 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F285479427B53CC600206661 /* Collection */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F285479427B53CC600206661 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				F285479727B5400000206661 /* Models */,
+				F28547A527B5566A00206661 /* CollectionRepository.swift */,
+				F28547A727B55D0600206661 /* CollectionApi.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F285479727B5400000206661 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F285479827B5401100206661 /* GetCollectionResponse.swift */,
+				F285479A27B5406F00206661 /* ArtObject.swift */,
+				F285479C27B54F5D00206661 /* ArtImage.swift */,
+				F285479E27B54F7C00206661 /* CountFacets.swift */,
+				F28547A027B54F9000206661 /* CategoryFacet.swift */,
+				F28547A227B54F9E00206661 /* Facet.swift */,
+				F289ABA027B576AC00CE7658 /* Links.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F28547A427B550CF00206661 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F289ABA327B5856E00CE7658 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F2856E6D27B66F3B00B60607 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2856E6E27B66F6800B60607 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2856E7827B6814000B60607 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F2856E7627B6813500B60607 /* ArtCardView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F289AB9B27B574D200CE7658 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				F289AB9C27B574F500CE7658 /* get-collection.json */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		F289ABA327B5856E00CE7658 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F289ABA427B5857E00CE7658 /* Bundle+Decodable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F289ABB227B5E82900CE7658 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F2856E6D27B66F3B00B60607 /* Extensions */,
+				F289ABB327B5E86400CE7658 /* ResponseState.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F289ABB527B5ECFD00CE7658 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F289ABB627B5ED1500CE7658 /* Library */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F289ABB627B5ED1500CE7658 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		F2E0E5AE27B2EDC800D9ABB6 = {
 			isa = PBXGroup;
 			children = (
 				F2E0E5B927B2EDC800D9ABB6 /* Arty */,
 				F2E0E5D027B2EDC900D9ABB6 /* ArtyTests */,
 				F2E0E5DA27B2EDC900D9ABB6 /* ArtyUITests */,
+				F2E0E5F527B3143C00D9ABB6 /* ArtyData */,
+				F2E0E60327B3143C00D9ABB6 /* ArtyDataTests */,
 				F2E0E5B827B2EDC800D9ABB6 /* Products */,
+				72269C3AF88792AE2A741500 /* Pods */,
+				23C321A68D18CC81DFF15436 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +381,8 @@
 				F2E0E5B727B2EDC800D9ABB6 /* Arty.app */,
 				F2E0E5CD27B2EDC900D9ABB6 /* ArtyTests.xctest */,
 				F2E0E5D727B2EDC900D9ABB6 /* ArtyUITests.xctest */,
+				F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */,
+				F2E0E5FD27B3143C00D9ABB6 /* ArtyDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,8 +390,11 @@
 		F2E0E5B927B2EDC800D9ABB6 /* Arty */ = {
 			isa = PBXGroup;
 			children = (
+				F285479027B53C2C00206661 /* DI */,
 				F2E0E5ED27B304F700D9ABB6 /* LifeCycle */,
 				F2E0E5EA27B304D100D9ABB6 /* Modules */,
+				F289ABB227B5E82900CE7658 /* Utility */,
+				F2856E7827B6814000B60607 /* CustomViews */,
 				F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */,
 				F2E0E5C527B2EDC900D9ABB6 /* LaunchScreen.storyboard */,
 				F2E0E5C827B2EDC900D9ABB6 /* Info.plist */,
@@ -107,6 +405,7 @@
 		F2E0E5D027B2EDC900D9ABB6 /* ArtyTests */ = {
 			isa = PBXGroup;
 			children = (
+				F289ABB527B5ECFD00CE7658 /* Modules */,
 				F2E0E5D127B2EDC900D9ABB6 /* ArtyTests.swift */,
 			);
 			path = ArtyTests;
@@ -124,7 +423,8 @@
 		F2E0E5EA27B304D100D9ABB6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F2E0E5EB27B304E200D9ABB6 /* WelcomeViewController.swift */,
+				F22AABB627B321F5009687BE /* Welcome */,
+				F22AABB827B3222C009687BE /* Library */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -137,20 +437,56 @@
 			path = LifeCycle;
 			sourceTree = "<group>";
 		};
+		F2E0E5F527B3143C00D9ABB6 /* ArtyData */ = {
+			isa = PBXGroup;
+			children = (
+				F2E0E5F727B3143C00D9ABB6 /* ArtyData.docc */,
+				F2E0E5F627B3143C00D9ABB6 /* ArtyData.h */,
+				F289AB9B27B574D200CE7658 /* LocalData */,
+				F285479327B53CC000206661 /* Modules */,
+				F28547A427B550CF00206661 /* Utility */,
+			);
+			path = ArtyData;
+			sourceTree = "<group>";
+		};
+		F2E0E60327B3143C00D9ABB6 /* ArtyDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				F289AB9E27B5753D00CE7658 /* CollectionRepositoryTests.swift */,
+			);
+			path = ArtyDataTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F2E0E5EF27B3143C00D9ABB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E0E60627B3143C00D9ABB6 /* ArtyData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F2E0E5B627B2EDC800D9ABB6 /* Arty */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2E0E5E127B2EDC900D9ABB6 /* Build configuration list for PBXNativeTarget "Arty" */;
 			buildPhases = (
+				AB6F026D2D01BB727D2E69EA /* [CP] Check Pods Manifest.lock */,
+				F289ABAB27B5C02F00CE7658 /* ShellScript */,
 				F2E0E5B327B2EDC800D9ABB6 /* Sources */,
 				F2E0E5B427B2EDC800D9ABB6 /* Frameworks */,
 				F2E0E5B527B2EDC800D9ABB6 /* Resources */,
+				F2E0E60E27B3143C00D9ABB6 /* Embed Frameworks */,
+				3F0AD82DE04346F07AFC40B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F2E0E60827B3143C00D9ABB6 /* PBXTargetDependency */,
 			);
 			name = Arty;
 			productName = Arty;
@@ -161,6 +497,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2E0E5E427B2EDC900D9ABB6 /* Build configuration list for PBXNativeTarget "ArtyTests" */;
 			buildPhases = (
+				4763F72ED1FE8673379FF510 /* [CP] Check Pods Manifest.lock */,
 				F2E0E5C927B2EDC900D9ABB6 /* Sources */,
 				F2E0E5CA27B2EDC900D9ABB6 /* Frameworks */,
 				F2E0E5CB27B2EDC900D9ABB6 /* Resources */,
@@ -179,9 +516,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2E0E5E727B2EDC900D9ABB6 /* Build configuration list for PBXNativeTarget "ArtyUITests" */;
 			buildPhases = (
+				4C1054A226D458C28D39B2C5 /* [CP] Check Pods Manifest.lock */,
 				F2E0E5D327B2EDC900D9ABB6 /* Sources */,
 				F2E0E5D427B2EDC900D9ABB6 /* Frameworks */,
 				F2E0E5D527B2EDC900D9ABB6 /* Resources */,
+				27A5C757EB2A6C5E3BA2A98F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +531,46 @@
 			productName = ArtyUITests;
 			productReference = F2E0E5D727B2EDC900D9ABB6 /* ArtyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F2E0E5F327B3143C00D9ABB6 /* ArtyData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E0E60B27B3143C00D9ABB6 /* Build configuration list for PBXNativeTarget "ArtyData" */;
+			buildPhases = (
+				15065F9FA270FC1B4BF2FF43 /* [CP] Check Pods Manifest.lock */,
+				F2E0E5EF27B3143C00D9ABB6 /* Headers */,
+				F2E0E5F027B3143C00D9ABB6 /* Sources */,
+				F2E0E5F127B3143C00D9ABB6 /* Frameworks */,
+				F2E0E5F227B3143C00D9ABB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtyData;
+			productName = ArtyData;
+			productReference = F2E0E5F427B3143C00D9ABB6 /* ArtyData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2E0E5FC27B3143C00D9ABB6 /* ArtyDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E0E60F27B3143C00D9ABB6 /* Build configuration list for PBXNativeTarget "ArtyDataTests" */;
+			buildPhases = (
+				90D4A42EA85F377B088BF517 /* [CP] Check Pods Manifest.lock */,
+				F2E0E5F927B3143C00D9ABB6 /* Sources */,
+				F2E0E5FA27B3143C00D9ABB6 /* Frameworks */,
+				F2E0E5FB27B3143C00D9ABB6 /* Resources */,
+				E8CADFE1CB9376BF467515BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2E0E60027B3143C00D9ABB6 /* PBXTargetDependency */,
+				F2E0E60227B3143C00D9ABB6 /* PBXTargetDependency */,
+			);
+			name = ArtyDataTests;
+			productName = ArtyDataTests;
+			productReference = F2E0E5FD27B3143C00D9ABB6 /* ArtyDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -214,6 +593,13 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = F2E0E5B627B2EDC800D9ABB6;
 					};
+					F2E0E5F327B3143C00D9ABB6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F2E0E5FC27B3143C00D9ABB6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F2E0E5B627B2EDC800D9ABB6;
+					};
 				};
 			};
 			buildConfigurationList = F2E0E5B227B2EDC800D9ABB6 /* Build configuration list for PBXProject "Arty" */;
@@ -232,6 +618,8 @@
 				F2E0E5B627B2EDC800D9ABB6 /* Arty */,
 				F2E0E5CC27B2EDC900D9ABB6 /* ArtyTests */,
 				F2E0E5D627B2EDC900D9ABB6 /* ArtyUITests */,
+				F2E0E5F327B3143C00D9ABB6 /* ArtyData */,
+				F2E0E5FC27B3143C00D9ABB6 /* ArtyDataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,15 +648,222 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2E0E5F227B3143C00D9ABB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F289AB9D27B574F500CE7658 /* get-collection.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E0E5FB27B3143C00D9ABB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15065F9FA270FC1B4BF2FF43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtyData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27A5C757EB2A6C5E3BA2A98F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arty-ArtyUITests/Pods-Arty-ArtyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arty-ArtyUITests/Pods-Arty-ArtyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arty-ArtyUITests/Pods-Arty-ArtyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F0AD82DE04346F07AFC40B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arty/Pods-Arty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arty/Pods-Arty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arty/Pods-Arty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4763F72ED1FE8673379FF510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C1054A226D458C28D39B2C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arty-ArtyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D4A42EA85F377B088BF517 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArtyData-ArtyDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6F026D2D01BB727D2E69EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CADFE1CB9376BF467515BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtyData-ArtyDataTests/Pods-ArtyData-ArtyDataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArtyData-ArtyDataTests/Pods-ArtyData-ArtyDataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArtyData-ArtyDataTests/Pods-ArtyData-ArtyDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F289ABAB27B5C02F00CE7658 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2E0E5B327B2EDC800D9ABB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2856E7727B6813500B60607 /* ArtCardView.swift in Sources */,
 				F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */,
+				F289ABB427B5E86400CE7658 /* ResponseState.swift in Sources */,
+				F289ABB127B5E1F300CE7658 /* ArtCategory.swift in Sources */,
+				F285479227B53C3800206661 /* App+Injection.swift in Sources */,
+				F289ABAF27B5E1E500CE7658 /* Artwork.swift in Sources */,
+				F285478D27B534A500206661 /* LibraryViewController.swift in Sources */,
+				F2856E6F27B66F6800B60607 /* UIViewExtensions.swift in Sources */,
+				F2856E7127B675AA00B60607 /* LibraryHeaderView.swift in Sources */,
+				F289ABA927B5A7AC00CE7658 /* WelcomeRouter.swift in Sources */,
+				F289ABA727B58C8900CE7658 /* LibraryViewModel.swift in Sources */,
 				F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */,
+				F2856E7327B67FDF00B60607 /* ArtworkCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +871,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F289ABB827B5ED3300CE7658 /* LibraryViewModelTests.swift in Sources */,
 				F2E0E5D227B2EDC900D9ABB6 /* ArtyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +882,32 @@
 			files = (
 				F2E0E5DE27B2EDC900D9ABB6 /* ArtyUITestsLaunchTests.swift in Sources */,
 				F2E0E5DC27B2EDC900D9ABB6 /* ArtyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E0E5F027B3143C00D9ABB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28547A127B54F9000206661 /* CategoryFacet.swift in Sources */,
+				F289ABA527B5857E00CE7658 /* Bundle+Decodable.swift in Sources */,
+				F28547A327B54F9E00206661 /* Facet.swift in Sources */,
+				F285479B27B5406F00206661 /* ArtObject.swift in Sources */,
+				F2E0E5F827B3143C00D9ABB6 /* ArtyData.docc in Sources */,
+				F285479D27B54F5D00206661 /* ArtImage.swift in Sources */,
+				F289ABA127B576AC00CE7658 /* Links.swift in Sources */,
+				F28547A827B55D0600206661 /* CollectionApi.swift in Sources */,
+				F285479927B5401100206661 /* GetCollectionResponse.swift in Sources */,
+				F28547A627B5566A00206661 /* CollectionRepository.swift in Sources */,
+				F285479F27B54F7C00206661 /* CountFacets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2E0E5F927B3143C00D9ABB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F289AB9F27B5753D00CE7658 /* CollectionRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +923,21 @@
 			isa = PBXTargetDependency;
 			target = F2E0E5B627B2EDC800D9ABB6 /* Arty */;
 			targetProxy = F2E0E5D827B2EDC900D9ABB6 /* PBXContainerItemProxy */;
+		};
+		F2E0E60027B3143C00D9ABB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2E0E5F327B3143C00D9ABB6 /* ArtyData */;
+			targetProxy = F2E0E5FF27B3143C00D9ABB6 /* PBXContainerItemProxy */;
+		};
+		F2E0E60227B3143C00D9ABB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2E0E5B627B2EDC800D9ABB6 /* Arty */;
+			targetProxy = F2E0E60127B3143C00D9ABB6 /* PBXContainerItemProxy */;
+		};
+		F2E0E60827B3143C00D9ABB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2E0E5F327B3143C00D9ABB6 /* ArtyData */;
+			targetProxy = F2E0E60727B3143C00D9ABB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,7 +1071,9 @@
 		};
 		F2E0E5E227B2EDC900D9ABB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACC4877B7C22F0A77192C6A /* Pods-Arty.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,7 +1088,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.Arty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -460,7 +1099,9 @@
 		};
 		F2E0E5E327B2EDC900D9ABB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EF8DED15B6E49D3EEC4BAA /* Pods-Arty.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -475,7 +1116,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.Arty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,6 +1127,7 @@
 		};
 		F2E0E5E527B2EDC900D9ABB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B5563949CE76CDC82AF9290 /* Pods-ArtyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +1147,7 @@
 		};
 		F2E0E5E627B2EDC900D9ABB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D50ECBB8A78FECD486815D9 /* Pods-ArtyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +1167,7 @@
 		};
 		F2E0E5E827B2EDC900D9ABB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EF4122982930701BE5EAF39 /* Pods-Arty-ArtyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +1185,7 @@
 		};
 		F2E0E5E927B2EDC900D9ABB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A6B6DCB374A93ADB5F36CC /* Pods-Arty-ArtyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +1198,102 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Arty;
+			};
+			name = Release;
+		};
+		F2E0E60C27B3143C00D9ABB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C60E883FD30BFD8330F635 /* Pods-ArtyData.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.ArtyData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2E0E60D27B3143C00D9ABB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6E2B7ADEAA1769BC7ECB95 /* Pods-ArtyData.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.ArtyData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2E0E61027B3143C00D9ABB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE725693024AEBE7C2A70ED /* Pods-ArtyData-ArtyDataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.ArtyDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arty.app/Arty";
+			};
+			name = Debug;
+		};
+		F2E0E61127B3143C00D9ABB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 703212F636DDD0E68CBABE6A /* Pods-ArtyData-ArtyDataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.ArtyDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arty.app/Arty";
 			};
 			name = Release;
 		};
@@ -591,6 +1332,24 @@
 			buildConfigurations = (
 				F2E0E5E827B2EDC900D9ABB6 /* Debug */,
 				F2E0E5E927B2EDC900D9ABB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E0E60B27B3143C00D9ABB6 /* Build configuration list for PBXNativeTarget "ArtyData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E0E60C27B3143C00D9ABB6 /* Debug */,
+				F2E0E60D27B3143C00D9ABB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E0E60F27B3143C00D9ABB6 /* Build configuration list for PBXNativeTarget "ArtyDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E0E61027B3143C00D9ABB6 /* Debug */,
+				F2E0E61127B3143C00D9ABB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
