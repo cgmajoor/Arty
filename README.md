@@ -42,6 +42,8 @@ I first gathering requirements and observing the Rijsmuseum API, I described the
 - [ ] Add changing parts as plug-ins. This can help suit testing for our needs.
 - [ ] We could separate the business layer from presentation layer to make components decoupled from each other for better testability.
 - [ ] As the application grows we could see what parts are being duplicated, we could either create some base classes and inherit from them to avoid code duplication or we could isolate some capabilities as protocols to make it more granular.
+- [ ] We should check layout for iPad, small and larger device sizes.
+- [ ] It would be nice it target iOS version is at least 2 versions lower than the latest iOS version available.
 - [ ] 
 ## Helper Tools
 - .gitignore from [github/gitignore](https://github.com/github/gitignore/blob/main/Swift.gitignore)
