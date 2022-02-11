@@ -3,7 +3,7 @@
 Art browser iOS application for Rijksmuseum
 
 ## How to download & run
-* Download the project from Github and open the Arty.xcodeproj in Xcode.
+* Download the project from Github and open the Arty.xcworkspace in Xcode.
 * You can get an API_KEY from [Rijksstudio](https://www.rijksmuseum.nl/en/rijksstudio). More detail about the API you can find on [RijksData](https://data.rijksmuseum.nl/object-metadata/api/)
 * Run the application on a simulator or device with minimum version iOS 15.0
 
