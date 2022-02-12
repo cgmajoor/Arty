@@ -48,7 +48,7 @@ I also added some routing and navigation between the screens.
 
 I tested repository to see if it is getting the correct data. 
 
-I adeded pagination possibility which I tested with a button first. It is incrementing the page that is fetched each time.
+I adeded pagination possibility which I tested with a button first. It is incrementing the page that is fetched each time. This still needs to be connected to the collection view when it scrolls.
 
 For loading animation I'm just using an activity indicator for now. I would like to change it with a custom animation.
 
