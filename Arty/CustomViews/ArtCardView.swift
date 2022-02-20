@@ -9,6 +9,14 @@ import UIKit
 
 class ArtCardView: UIView {
 
+    let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        return stackView
+    }()
+
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -41,23 +49,10 @@ class ArtCardView: UIView {
     private func setup() {
         clipsToBounds = true
         layer.masksToBounds = true
-
+        embed(view: stackView)
         [imageView, titleLabel].forEach {
-            $0.translatesAutoresizingMaskIntoConstraints = false
-            addSubview($0)
+            stackView.addArrangedSubview($0)
         }
-
-        setupLayoutConstraints()
-    }
-
-    private func setupLayoutConstraints() {
-        embed(view: imageView)
-        NSLayoutConstraint.activate([
-            titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
-            titleLabel.heightAnchor.constraint(equalToConstant: titleLabel.font.lineHeight)
-        ])
     }
 
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 public struct ArtImage: Codable {
-    let guid: String
-    let offsetPercentageX, offsetPercentageY, width, height: Int
-    let url: String
+    public let guid: String
+    public let offsetPercentageX, offsetPercentageY, width, height: Int
+    public let url: String
 }
