@@ -5,10 +5,15 @@ pod 'Moya', '~> 15.0'
 pod 'Resolver'
 end
 
+def ui
+pod 'SDWebImage', '~> 5.0'
+end
+
 target 'Arty' do
 use_frameworks!
 
 common
+ui
 
 target 'ArtyTests' do
 inherit! :search_paths

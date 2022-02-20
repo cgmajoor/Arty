@@ -106,12 +106,12 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
             guard let self = self else { return }
             self.loading = true
 
-            switch result {
-            case .loading:
-                self.activityIndicatorView.startAnimating()
-            case .finished(let outcome):
+            DispatchQueue.main.async {
+                switch result {
+                case .loading:
+                    self.activityIndicatorView.startAnimating()
+                case .finished(let outcome):
 
-                DispatchQueue.main.async {
                     self.activityIndicatorView.stopAnimating()
                     self.loading = false
                     switch outcome {
@@ -122,7 +122,7 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
                         for sec in Section.allCases {
                             snapshot.appendSections([sec])
                             snapshot.appendItems(self.viewModel.getArtworks(sec), toSection: sec)
-                            //print("Success! Artobjects count \(self.viewModel.getArtworks(sec).count))")
+                            // print("Success! Artobjects count \(self.viewModel.getArtworks(sec).count))")
                         }
 
                         self.dataSource?.apply(snapshot)
@@ -130,6 +130,7 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
                     case .failure(let error):
                         print(error.localizedDescription)
                     }
+
                 }
             }
         }
@@ -140,7 +141,7 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
     func createLayout() -> UICollectionViewLayout {
 
         let config = UICollectionViewCompositionalLayoutConfiguration()
-        config.interSectionSpacing = 20
+        config.interSectionSpacing = 10
 
         let layout = UICollectionViewCompositionalLayout(sectionProvider: { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
 
@@ -149,7 +150,7 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
             let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.90),
-                                                   heightDimension: .fractionalHeight(0.4))
+                                                   heightDimension: .fractionalWidth(2/3))
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
             group.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 
@@ -167,8 +168,8 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
                 guard let self = self else { return }
                 if !self.loading {
                     self.loading = true
-                    //print("Curent section: \(Section.allCases[sectionIndex])")
-                    //print("Current visible item indexPath.row: \(visibleItems.last?.indexPath.row)")
+                    // print("Curent section: \(Section.allCases[sectionIndex])")
+                    // print("Current visible item indexPath.row: \(visibleItems.last?.indexPath.row)")
                     self.getCollection(Section.allCases[sectionIndex])
                 }
             }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ArtworkCell: UICollectionViewCell {
 
@@ -22,7 +23,8 @@ class ArtworkCell: UICollectionViewCell {
 
     func configure(artwork: Artwork) {
         artCardView.titleLabel.text = artwork.title
-
+        guard let url = URL(string: artwork.imageUrl) else { return }
+        artCardView.imageView.sd_setImage(with: url, completed: nil)
     }
 
     // MARK: - Private

@@ -16,6 +16,7 @@ class LibraryViewModel {
     private let collectionRepository: CollectionRepository
 
     // MARK: - Properties
+    static var maxItems = 10000
     public var printArtworks: [Artwork]
     public var drawingArtworks: [Artwork]
     public var paintingArtworks: [Artwork]
@@ -23,7 +24,7 @@ class LibraryViewModel {
     var categories: [ArtCategory]? // principalMaker, type, material, place etc.
     var artTypes: [Facet]? // painting, drawing, print etc.
 
-    var pageSize: Int = 10
+    var pageSize: Int = 5
 
     // MARK: - Init
     
@@ -38,6 +39,9 @@ class LibraryViewModel {
 
     public func fetchCollection(_ section: Section,completion: @escaping ((ResponseState<[Artwork]>) -> Void)) {
         completion(ResponseState.loading)
+        guard (getCurrentPage(section) * pageSize) < LibraryViewModel.maxItems else { return }
+        //print("CurrentPage: \(getCurrentPage(section)) for section: \(section.rawValue)")
+
         collectionRepository.getCollection(page: getCurrentPage(section), pageSize: pageSize, type: section.getArtType()) { result in
             switch result {
             case .success(let response):
@@ -49,7 +53,7 @@ class LibraryViewModel {
         }
     }
 
-    // MARK: -
+    // MARK: - Helpers
 
     func getCurrentPage(_ section: Section) -> Int {
         self.getArtworks(section).count / pageSize
@@ -83,7 +87,7 @@ class LibraryViewModel {
             completion(ResponseState.finished(.success(paintingArtworks)))
         }
 
-        //        categories = response.facets.map { ArtCategory(categoryFacet: $0) }
-        //        artTypes = self.categories?.first(where: { $0.name == "type" })?.facets
+        // categories = response.facets.map { ArtCategory(categoryFacet: $0) }
+        // artTypes = self.categories?.first(where: { $0.name == "type" })?.facets
     }
 }
