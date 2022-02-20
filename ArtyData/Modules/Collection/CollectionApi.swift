@@ -14,7 +14,7 @@ public enum ApiEnvironment {
 }
 
 public enum CollectionApi {
-    case getCollection(page: Int, pageSize: Int)
+    case getCollection(page: Int, pageSize: Int, type: String)
 }
 
 extension CollectionApi: TargetType {
@@ -36,10 +36,11 @@ extension CollectionApi: TargetType {
 
     public var task: Task {
         switch self {
-        case .getCollection(let page, let pageSize):
+        case .getCollection(let page, let pageSize, let type):
             let dict: [String: Any] = ["p": page,
                                        "ps": pageSize,
-                                       "imgonly": "true"]
+                                       "imgonly": "true",
+                                       "type": type]
             return .requestParameters(parameters: dict, encoding: URLEncoding.default)
         }
     }

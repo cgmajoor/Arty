@@ -15,7 +15,7 @@ class CollectionRepositoryTests: XCTestCase {
         let stubbingProvider = MoyaProvider<CollectionApi>(stubClosure: MoyaProvider.immediatelyStub)
         let collectionRepository = CollectionRepository(provider: stubbingProvider)
         
-        collectionRepository.getCollection(page: 0, pageSize: 10) { result in
+        collectionRepository.getCollection(page: 0, pageSize: 10, type: .print) { result in
             switch result {
             case .success(let response):
                 XCTAssert(response.artObjects.count == 10)
@@ -32,7 +32,7 @@ class CollectionRepositoryTests: XCTestCase {
         let collectionRepository = CollectionRepository(provider: stubbingProvider)
         let getCollectionExpectation = expectation(description: "getCollection")
         
-        collectionRepository.getCollection(page: 0, pageSize: 20) { result in
+        collectionRepository.getCollection(page: 0, pageSize: 20, type: .print) { result in
             switch result {
             case .success(let response):
                 XCTAssert(response.artObjects.count == 20)

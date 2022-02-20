@@ -7,13 +7,24 @@
 
 import Foundation
 import ArtyData
+import UIKit
 
 // MARK: - Artwork
 
-public struct Artwork: Codable {
-    let artObject: ArtObject
+struct Artwork: Hashable {
+    let objectNumber: String
+    let title: String
+    let imageUrl: String
+    private let identifier: UUID
 
     public init(artObject: ArtObject) {
-        self.artObject = artObject
+        self.objectNumber = artObject.objectNumber
+        self.title = artObject.title
+        self.imageUrl = artObject.webImage.url
+        self.identifier = UUID(uuidString: artObject.id) ?? UUID()
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.identifier)
     }
 }

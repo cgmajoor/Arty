@@ -21,7 +21,8 @@ class ArtworkCell: UICollectionViewCell {
     }
 
     func configure(artwork: Artwork) {
-        artCardView.titleLabel.text = artwork.artObject.title
+        artCardView.titleLabel.text = artwork.title
+
     }
 
     // MARK: - Private

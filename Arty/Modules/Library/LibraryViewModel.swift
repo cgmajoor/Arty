@@ -16,30 +16,32 @@ class LibraryViewModel {
     private let collectionRepository: CollectionRepository
 
     // MARK: - Properties
-    public var artworks: [Artwork]
-    public var categories: [ArtCategory]? // principalMaker, type, material, place etc.
-    public var artTypes: [Facet]? // painting, drawing, print etc.
+    public var printArtworks: [Artwork]
+    public var drawingArtworks: [Artwork]
+    public var paintingArtworks: [Artwork]
+
+    var categories: [ArtCategory]? // principalMaker, type, material, place etc.
+    var artTypes: [Facet]? // painting, drawing, print etc.
 
     var pageSize: Int = 10
-    var currentPage: Int {
-        return artworks.count / pageSize
-    }
 
     // MARK: - Init
     
     init(collectionRepository: CollectionRepository) {
         self.collectionRepository = collectionRepository
-        self.artworks = [Artwork]()
+        self.printArtworks = [Artwork]()
+        self.drawingArtworks = [Artwork]()
+        self.paintingArtworks = [Artwork]()
     }
 
     // MARK: - Init
 
-    public func fetchCollection(completion: @escaping ((ResponseState<GetCollectionResponse>) -> Void)) {
+    public func fetchCollection(_ section: Section,completion: @escaping ((ResponseState<[Artwork]>) -> Void)) {
         completion(ResponseState.loading)
-        collectionRepository.getCollection(page: currentPage, pageSize: pageSize) { result in
+        collectionRepository.getCollection(page: getCurrentPage(section), pageSize: pageSize, type: section.getArtType()) { result in
             switch result {
             case .success(let response):
-                self.onSuccess(response, completion: completion)
+                self.onSuccess(response, section: section, completion: completion)
             case .failure(let error):
                 print(error.localizedDescription)
                 completion(ResponseState.finished(.failure(error)))
@@ -47,16 +49,41 @@ class LibraryViewModel {
         }
     }
 
+    // MARK: -
+
+    func getCurrentPage(_ section: Section) -> Int {
+        self.getArtworks(section).count / pageSize
+    }
+
+    func getArtworks(_ section: Section) -> [Artwork] {
+        switch section {
+        case .print:
+            return printArtworks
+        case .drawing:
+            return drawingArtworks
+        case .painting:
+            return paintingArtworks
+        }
+    }
+
     // MARK: - Private
 
     private func onSuccess(_ response: GetCollectionResponse,
-                           completion: @escaping ((ResponseState<GetCollectionResponse>) -> Void)) {
-        let lastFetchedArtworks = response.artObjects.map { Artwork(artObject: $0) }
-        self.artworks += lastFetchedArtworks
-        self.categories = response.facets.map { ArtCategory(categoryFacet: $0) }
-        self.artTypes = self.categories?.first(where: {$0.name == "type"})?.facets
+                           section: Section,
+                           completion: @escaping ((ResponseState<[Artwork]>) -> Void)) {
+        switch section {
+        case .print:
+            printArtworks += response.artObjects.map { Artwork(artObject: $0) }
+            completion(ResponseState.finished(.success(printArtworks)))
+        case .drawing:
+            drawingArtworks += response.artObjects.map { Artwork(artObject: $0) }
+            completion(ResponseState.finished(.success(drawingArtworks)))
+        case .painting:
+            paintingArtworks += response.artObjects.map { Artwork(artObject: $0) }
+            completion(ResponseState.finished(.success(paintingArtworks)))
+        }
 
-
-        completion(ResponseState.finished(.success(response)))
+        //        categories = response.facets.map { ArtCategory(categoryFacet: $0) }
+        //        artTypes = self.categories?.first(where: { $0.name == "type" })?.facets
     }
 }
