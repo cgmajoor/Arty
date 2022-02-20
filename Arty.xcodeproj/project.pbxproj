@@ -36,6 +36,7 @@
 		F289ABB127B5E1F300CE7658 /* ArtCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB027B5E1F300CE7658 /* ArtCategory.swift */; };
 		F289ABB427B5E86400CE7658 /* ResponseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB327B5E86400CE7658 /* ResponseState.swift */; };
 		F289ABB827B5ED3300CE7658 /* LibraryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */; };
+		F2C62B3827C2BC60008154E6 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B3727C2BC60008154E6 /* Section.swift */; };
 		F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */; };
 		F2E0E5C427B2EDC900D9ABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */; };
 		F2E0E5C727B2EDC900D9ABB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C527B2EDC900D9ABB6 /* LaunchScreen.storyboard */; };
@@ -141,6 +142,7 @@
 		F289ABB027B5E1F300CE7658 /* ArtCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCategory.swift; sourceTree = "<group>"; };
 		F289ABB327B5E86400CE7658 /* ResponseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseState.swift; sourceTree = "<group>"; };
 		F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModelTests.swift; sourceTree = "<group>"; };
+		F2C62B3727C2BC60008154E6 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		F2E0E5B727B2EDC800D9ABB6 /* Arty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				F289ABB027B5E1F300CE7658 /* ArtCategory.swift */,
 				F2856E7027B675AA00B60607 /* LibraryHeaderView.swift */,
 				F2856E7227B67FDF00B60607 /* ArtworkCell.swift */,
+				F2C62B3727C2BC60008154E6 /* Section.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -854,6 +857,7 @@
 				F2856E7727B6813500B60607 /* ArtCardView.swift in Sources */,
 				F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */,
 				F289ABB427B5E86400CE7658 /* ResponseState.swift in Sources */,
+				F2C62B3827C2BC60008154E6 /* Section.swift in Sources */,
 				F289ABB127B5E1F300CE7658 /* ArtCategory.swift in Sources */,
 				F285479227B53C3800206661 /* App+Injection.swift in Sources */,
 				F289ABAF27B5E1E500CE7658 /* Artwork.swift in Sources */,

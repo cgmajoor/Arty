@@ -7,6 +7,12 @@
 
 import Moya
 
+public enum ArtType: String {
+    case print
+    case drawing
+    case painting
+}
+
 public class CollectionRepository {
 
     let provider: MoyaProvider<CollectionApi>
@@ -17,8 +23,9 @@ public class CollectionRepository {
 
     public func getCollection(page: Int,
                               pageSize: Int,
+                              type: ArtType,
                               completion: @escaping ((Result<GetCollectionResponse, Error>) -> Void)) {
-        provider.request(.getCollection(page: page, pageSize: pageSize)) { result in
+        provider.request(.getCollection(page: page, pageSize: pageSize, type: type.rawValue)) { result in
             do {
                 let data = try result.get().data
                 let response = try JSONDecoder().decode(GetCollectionResponse.self, from: data)
