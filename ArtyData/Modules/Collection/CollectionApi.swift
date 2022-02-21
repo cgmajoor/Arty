@@ -15,6 +15,7 @@ public enum ApiEnvironment {
 
 public enum CollectionApi {
     case getCollection(page: Int, pageSize: Int, type: String)
+    case getArtObject(objectNumber: String)
 }
 
 extension CollectionApi: TargetType {
@@ -24,12 +25,14 @@ extension CollectionApi: TargetType {
         switch self {
         case .getCollection:
             return ApiEnvironment.collectionPath
+        case .getArtObject(let objectNumber):
+            return "\(ApiEnvironment.collectionPath)/\(objectNumber)"
         }
     }
 
     public var method: Moya.Method {
         switch self {
-        case .getCollection:
+        case .getCollection, .getArtObject:
             return .get
         }
     }
@@ -42,15 +45,20 @@ extension CollectionApi: TargetType {
                                        "imgonly": "true",
                                        "type": type]
             return .requestParameters(parameters: dict, encoding: URLEncoding.default)
+        case .getArtObject:
+            return .requestPlain
         }
     }
 
     public var sampleData: Data {
         switch self {
         case .getCollection:
-            
             return Bundle(for: CollectionRepository.self).getData(type: GetCollectionResponse.self,
                                                                   file: "get-collection",
+                                                                  withExtension: "json") ?? Data()
+        case .getArtObject:
+            return Bundle(for: CollectionRepository.self).getData(type: GetArtObjectResponse.self,
+                                                                  file: "get-artobject",
                                                                   withExtension: "json") ?? Data()
         }
     }

@@ -37,6 +37,13 @@
 		F289ABB427B5E86400CE7658 /* ResponseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB327B5E86400CE7658 /* ResponseState.swift */; };
 		F289ABB827B5ED3300CE7658 /* LibraryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */; };
 		F2C62B3827C2BC60008154E6 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B3727C2BC60008154E6 /* Section.swift */; };
+		F2C62B3B27C308D0008154E6 /* ArtworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B3A27C308D0008154E6 /* ArtworkViewController.swift */; };
+		F2C62B3D27C3091C008154E6 /* LibraryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B3C27C3091C008154E6 /* LibraryRouter.swift */; };
+		F2C62B3F27C30B3A008154E6 /* ArtworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B3E27C30B3A008154E6 /* ArtworkViewModel.swift */; };
+		F2C62B4127C30D9F008154E6 /* GetArtObjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B4027C30D9F008154E6 /* GetArtObjectResponse.swift */; };
+		F2C62B4327C30E09008154E6 /* ArtObjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B4227C30E09008154E6 /* ArtObjectDetail.swift */; };
+		F2C62B4527C31130008154E6 /* ArtworkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C62B4427C31130008154E6 /* ArtworkDetail.swift */; };
+		F2C62B4727C32105008154E6 /* get-artobject.json in Resources */ = {isa = PBXBuildFile; fileRef = F2C62B4627C32105008154E6 /* get-artobject.json */; };
 		F2E0E5BB27B2EDC800D9ABB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */; };
 		F2E0E5C427B2EDC900D9ABB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */; };
 		F2E0E5C727B2EDC900D9ABB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0E5C527B2EDC900D9ABB6 /* LaunchScreen.storyboard */; };
@@ -143,6 +150,13 @@
 		F289ABB327B5E86400CE7658 /* ResponseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseState.swift; sourceTree = "<group>"; };
 		F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModelTests.swift; sourceTree = "<group>"; };
 		F2C62B3727C2BC60008154E6 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		F2C62B3A27C308D0008154E6 /* ArtworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewController.swift; sourceTree = "<group>"; };
+		F2C62B3C27C3091C008154E6 /* LibraryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRouter.swift; sourceTree = "<group>"; };
+		F2C62B3E27C30B3A008154E6 /* ArtworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewModel.swift; sourceTree = "<group>"; };
+		F2C62B4027C30D9F008154E6 /* GetArtObjectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArtObjectResponse.swift; sourceTree = "<group>"; };
+		F2C62B4227C30E09008154E6 /* ArtObjectDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectDetail.swift; sourceTree = "<group>"; };
+		F2C62B4427C31130008154E6 /* ArtworkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDetail.swift; sourceTree = "<group>"; };
+		F2C62B4627C32105008154E6 /* get-artobject.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "get-artobject.json"; sourceTree = "<group>"; };
 		F2E0E5B727B2EDC800D9ABB6 /* Arty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E0E5BA27B2EDC800D9ABB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2E0E5C327B2EDC900D9ABB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -250,6 +264,7 @@
 			children = (
 				F285478C27B534A500206661 /* LibraryViewController.swift */,
 				F289ABA627B58C8900CE7658 /* LibraryViewModel.swift */,
+				F2C62B3C27C3091C008154E6 /* LibraryRouter.swift */,
 				F289ABAE27B5E1E500CE7658 /* Artwork.swift */,
 				F289ABB027B5E1F300CE7658 /* ArtCategory.swift */,
 				F2856E7027B675AA00B60607 /* LibraryHeaderView.swift */,
@@ -295,6 +310,8 @@
 				F28547A027B54F9000206661 /* CategoryFacet.swift */,
 				F28547A227B54F9E00206661 /* Facet.swift */,
 				F289ABA027B576AC00CE7658 /* Links.swift */,
+				F2C62B4027C30D9F008154E6 /* GetArtObjectResponse.swift */,
+				F2C62B4227C30E09008154E6 /* ArtObjectDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				F289AB9C27B574F500CE7658 /* get-collection.json */,
+				F2C62B4627C32105008154E6 /* get-artobject.json */,
 			);
 			path = LocalData;
 			sourceTree = "<group>";
@@ -362,6 +380,16 @@
 				F289ABB727B5ED3300CE7658 /* LibraryViewModelTests.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		F2C62B3927C3089F008154E6 /* ArtworkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F2C62B3A27C308D0008154E6 /* ArtworkViewController.swift */,
+				F2C62B3E27C30B3A008154E6 /* ArtworkViewModel.swift */,
+				F2C62B4427C31130008154E6 /* ArtworkDetail.swift */,
+			);
+			path = ArtworkDetail;
 			sourceTree = "<group>";
 		};
 		F2E0E5AE27B2EDC800D9ABB6 = {
@@ -426,6 +454,7 @@
 		F2E0E5EA27B304D100D9ABB6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F2C62B3927C3089F008154E6 /* ArtworkDetail */,
 				F22AABB627B321F5009687BE /* Welcome */,
 				F22AABB827B3222C009687BE /* Library */,
 			);
@@ -656,6 +685,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F289AB9D27B574F500CE7658 /* get-collection.json in Resources */,
+				F2C62B4727C32105008154E6 /* get-artobject.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,12 +885,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2856E7727B6813500B60607 /* ArtCardView.swift in Sources */,
+				F2C62B3F27C30B3A008154E6 /* ArtworkViewModel.swift in Sources */,
 				F2E0E5EC27B304E200D9ABB6 /* WelcomeViewController.swift in Sources */,
 				F289ABB427B5E86400CE7658 /* ResponseState.swift in Sources */,
 				F2C62B3827C2BC60008154E6 /* Section.swift in Sources */,
+				F2C62B3D27C3091C008154E6 /* LibraryRouter.swift in Sources */,
 				F289ABB127B5E1F300CE7658 /* ArtCategory.swift in Sources */,
+				F2C62B4527C31130008154E6 /* ArtworkDetail.swift in Sources */,
 				F285479227B53C3800206661 /* App+Injection.swift in Sources */,
 				F289ABAF27B5E1E500CE7658 /* Artwork.swift in Sources */,
+				F2C62B3B27C308D0008154E6 /* ArtworkViewController.swift in Sources */,
 				F285478D27B534A500206661 /* LibraryViewController.swift in Sources */,
 				F2856E6F27B66F6800B60607 /* UIViewExtensions.swift in Sources */,
 				F2856E7127B675AA00B60607 /* LibraryHeaderView.swift in Sources */,
@@ -898,7 +932,9 @@
 				F28547A327B54F9E00206661 /* Facet.swift in Sources */,
 				F285479B27B5406F00206661 /* ArtObject.swift in Sources */,
 				F2E0E5F827B3143C00D9ABB6 /* ArtyData.docc in Sources */,
+				F2C62B4327C30E09008154E6 /* ArtObjectDetail.swift in Sources */,
 				F285479D27B54F5D00206661 /* ArtImage.swift in Sources */,
+				F2C62B4127C30D9F008154E6 /* GetArtObjectResponse.swift in Sources */,
 				F289ABA127B576AC00CE7658 /* Links.swift in Sources */,
 				F28547A827B55D0600206661 /* CollectionApi.swift in Sources */,
 				F285479927B5401100206661 /* GetCollectionResponse.swift in Sources */,
@@ -1082,6 +1118,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Arty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1092,7 +1129,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.Arty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1110,6 +1147,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Arty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1120,7 +1158,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucium.Arty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

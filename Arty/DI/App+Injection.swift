@@ -15,6 +15,7 @@ extension Resolver: ResolverRegistering {
         defaultScope = .graph
         
         register { WelcomeRouter() as WelcomeRouting }
+        register { LibraryRouter() as LibraryRouting }
         
         register { CollectionRepository(provider: MoyaProvider<CollectionApi>()) }
         // If you don't have an APIKEY for Rijksmuseum
@@ -24,5 +25,6 @@ extension Resolver: ResolverRegistering {
         // MoyaProvider<CollectionApi>(stubClosure: MoyaProvider.immediatelyStub)) }
         
         register { LibraryViewModel(collectionRepository: $0.resolve()) }
+        register { ArtworkViewModel(collectionRepository: $0.resolve()) }
     }
 }
