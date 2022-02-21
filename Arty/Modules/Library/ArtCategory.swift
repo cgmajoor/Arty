@@ -8,8 +8,6 @@
 import Foundation
 import ArtyData
 
-// MARK: - ArtCategory
-
 public struct ArtCategory: Codable {
     let facets: [Facet]
     let name: String

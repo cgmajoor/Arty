@@ -14,13 +14,13 @@ public enum ArtType: String {
 }
 
 public class CollectionRepository {
-
+    
     let provider: MoyaProvider<CollectionApi>
     
     public init(provider: MoyaProvider<CollectionApi>) {
         self.provider = provider
     }
-
+    
     public func getCollection(page: Int,
                               pageSize: Int,
                               type: ArtType,
@@ -29,6 +29,19 @@ public class CollectionRepository {
             do {
                 let data = try result.get().data
                 let response = try JSONDecoder().decode(GetCollectionResponse.self, from: data)
+                completion(.success(response))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    public func getArtObject(objectNumber: String,
+                             completion: @escaping ((Result<GetArtObjectResponse, Error>) -> Void)) {
+        provider.request(.getArtObject(objectNumber: objectNumber)) { result in
+            do {
+                let data = try result.get().data
+                let response = try JSONDecoder().decode(GetArtObjectResponse.self, from: data)
                 completion(.success(response))
             } catch {
                 completion(.failure(error))

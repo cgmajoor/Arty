@@ -13,6 +13,7 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
     // MARK: - Dependencies
 
     @Injected private var viewModel: LibraryViewModel
+    @Injected private var router: LibraryRouting
 
     // MARK: - Properties
     static let headerElementKind = "header-element-kind"
@@ -139,7 +140,6 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
     // MARK: - UICollectionViewLayout
 
     func createLayout() -> UICollectionViewLayout {
-
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.interSectionSpacing = 10
 
@@ -173,11 +173,15 @@ class LibraryViewController: UIViewController, UICollectionViewDelegate {
                     self.getCollection(Section.allCases[sectionIndex])
                 }
             }
-
             return section
-
         }, configuration: config)
         return layout
     }
-    
+
+    // MARK: - UICollectionViewDelegate
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let artwork = dataSource.itemIdentifier(for: indexPath) else { return }
+        router.didSelectArtwork(objectNumber: artwork.objectNumber, in: self)
+    }
 }
