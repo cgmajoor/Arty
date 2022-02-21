@@ -9,8 +9,6 @@ import Foundation
 import ArtyData
 import UIKit
 
-// MARK: - Artwork
-
 struct Artwork: Hashable {
     let objectNumber: String
     let title: String
